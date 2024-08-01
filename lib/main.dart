@@ -4,12 +4,13 @@ import 'package:newssapp/News_Layout.dart';
 import 'package:newssapp/cubit/cubit.dart';
 import 'package:newssapp/themes/thems.dart';
 import 'package:provider/provider.dart';
+import 'network/local/cache_helper.dart';
 import 'network/remote/dio_helper.dart';
 
 
 void main() {
   DioHelper.init();
-  // CacheHelper.init();
+  CacheHelper.init();
 
   runApp(
     ChangeNotifierProvider(

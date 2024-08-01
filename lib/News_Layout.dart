@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newssapp/cubit/cubit.dart';
 import 'package:newssapp/cubit/states.dart';
 import 'package:provider/provider.dart';
-
 import 'Search_Screen.dart';
 import 'Shared/components.dart';
 
