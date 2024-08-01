@@ -106,9 +106,6 @@ class NewsCubit extends Cubit<NewsStates> {
     }
   }
 
-
-
-
   List<dynamic> MacBookPro=[];
 
   void getMacBookPro(){
