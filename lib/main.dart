@@ -8,7 +8,10 @@ import 'network/local/cache_helper.dart';
 import 'network/remote/dio_helper.dart';
 
 
-void main() {
+void main() async{
+  String data = await fetchData();
+  print(data);
+  
   DioHelper.init();
   CacheHelper.init();
 
@@ -43,4 +46,9 @@ class MyApp extends StatelessWidget {
             ),
           );
   }
+}
+
+Future<String> fetchData() async {
+  await Future.delayed(Duration(seconds: 2));
+  return "Data fetched!";
 }
