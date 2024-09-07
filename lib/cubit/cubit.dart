@@ -50,7 +50,7 @@ class NewsCubit extends Cubit<NewsStates> {
 
   List<dynamic> business=[];
 
-
+// https://newsapi.org/v2/everything
   void getBusiness(){
     emit(NewsLoadingStates());
     DioHelper.getdata(
@@ -58,8 +58,8 @@ class NewsCubit extends Cubit<NewsStates> {
       query:
       {
         'q':'Business',
-        'from':'2024-07-21',
-        'to': '2024-07-21',
+        'from':'2024-09-06',
+        'to': '2024-09-06',
         'sortBy':'popularity',
         'apiKey':'5aa9575a433e47688e1244abbcaa00cc',
       }).then((value){
@@ -86,8 +86,8 @@ class NewsCubit extends Cubit<NewsStates> {
           query:
           {
             'q':'Headphones-apple',
-            'from':'2024-07-21',
-            'to': '2024-07-21',
+            'from':'2024-09-06',
+            'to': '2024-09-06',
             'sortBy':'popularity',
             'apiKey':'5aa9575a433e47688e1244abbcaa00cc',
           }).then((value){
@@ -117,8 +117,8 @@ class NewsCubit extends Cubit<NewsStates> {
           query:
           {
             'q':'macbook',
-            'from':'2024-07-21',
-            'to': '2024-07-21',
+            'from':'2024-09-06',
+            'to': '2024-09-06',
             'sortBy':'popularity',
             'apiKey':'5aa9575a433e47688e1244abbcaa00cc',
           }).then((value){
@@ -154,8 +154,8 @@ class NewsCubit extends Cubit<NewsStates> {
       query:
       {
         'q':'${value}',
-        'from':'2024-07-21',
-        'to': '2024-07-21',
+        'from':'2024-09-06',
+        'to': '2024-09-06',
         'sortBy':'popularity',
         'apiKey':'5aa9575a433e47688e1244abbcaa00cc',
       },
